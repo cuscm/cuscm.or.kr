@@ -21,15 +21,15 @@
     
     window.addEventListener('scroll', ()=>{
         playFadeInAnimation(section1, section1.offsetTop-600);
-        playFadeInAnimation(section2, section2.offsetTop-500);
-        playFadeInAnimation(section3, section3.offsetTop-500);
-        // playFadeInAnimation(section4, section4.offsetTop-500);
+        playFadeInAnimation(section2, section2.offsetTop-600);
+        playFadeInAnimation(section3, section3.offsetTop-600);
+        // playFadeInAnimation(section4, section4.offsetTop-600);
     });
 
     window.addEventListener('resize', ()=>{
         playFadeInAnimation(section1, section1.offsetTop-600);
-        playFadeInAnimation(section2, section2.offsetTop-500);
-        playFadeInAnimation(section3, section3.offsetTop-500);
-        // playFadeInAnimation(section4, section4.offsetTop-500);
+        playFadeInAnimation(section2, section2.offsetTop-600);
+        playFadeInAnimation(section3, section3.offsetTop-600);
+        // playFadeInAnimation(section4, section4.offsetTop-600);
     });
 })();

@@ -282,13 +282,13 @@ body.before-load {
 .padlet-embed{
 	margin: 0 auto;
 	width:100%;
-	-webkit-transform: scale(0.88) translateY(4rem);
-	-moz-transform: scale(0.88) translateY(4rem);
-	-ms-transform: scale(0.88) translateY(4rem);
-	transform: scale(0.88) translateY(4rem);
-	-webkit-transform-origin: bottom ;
-	-moz-transform-origin: bottom ;
-	transform-origin: bottom ; 
+	-webkit-transform: scale(0.88) translateY(1rem);
+	-moz-transform: scale(0.88) translateY(1rem);
+	-ms-transform: scale(0.88) translateY(1rem);
+	transform: scale(0.88) translateY(1rem);
+	-webkit-transform-origin: bottom;
+	-moz-transform-origin: bottom;
+	transform-origin: bottom; 
 }
 .padlet-embed iframe {
 	height:508px;

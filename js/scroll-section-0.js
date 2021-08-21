@@ -267,6 +267,7 @@
 
     window.addEventListener('resize', () => {
         setLayout();
+        playCanvasAnimation();
     });
 
 })();

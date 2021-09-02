@@ -256,8 +256,8 @@
 
     window.addEventListener('load', () => {
         setLayout();
-        context.drawImage(imgElem1, 0, 0);
         playTextAnimation();
+        playCanvasAnimation();
     });
 
     window.addEventListener('scroll', ()=>{

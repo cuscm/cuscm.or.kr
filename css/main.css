@@ -386,13 +386,13 @@ footer .copyright a{
 	#scroll-section-1 h1,
 	#scroll-section-2 h1,
 	#scroll-section-3 h1 {
-		font-size: 5vw;
+		font-size: 5rem;
 	}
 	#scroll-section-1 h3,
 	#scroll-section-2 h3,
 	#scroll-section-3 h3,
 	#scroll-section-4 h3 {
-		font-size: 2.5vw;
+		font-size: 2.2rem;
 	}
 	.description {
 		padding: 0 1rem 0 0;

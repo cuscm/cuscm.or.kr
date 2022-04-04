@@ -7,10 +7,10 @@
         let yOffset = window.pageYOffset;
 
 		if (yOffset > 44) {
-			document.body.classList.add('local-nav-sticky');
+			document.body.classList.add('global-nav-sticky');
 		} 
         else {
-			document.body.classList.remove('local-nav-sticky');
+			document.body.classList.remove('global-nav-sticky');
 		}
 	}
 

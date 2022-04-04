@@ -31,13 +31,17 @@ body.before-load {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 15;
+	z-index: 5;
 	background: white;
 	opacity: 0;
 	transition: 0.5s;
 }
+.before-load .top-nav,
 .before-load .container {
     display: none;
+}
+.before-load .global-nav {
+    top: 0;
 }
 .before-load .loading {
 	opacity: 1;
@@ -72,33 +76,28 @@ body.before-load {
 
 /* 전역변수들 (코딩웍스 님) */
 :root{
-	--global-nav-height: 44px;
-	--local-nav-height: 52px;
+	--top-nav-height: 44px;
+	--global-nav-height: 52px;
 }
 
-.global-nav {
+.top-nav {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 10;
 	width: 100%;
-	height: var(--global-nav-height);
+	height: var(--top-nav-height);
 	padding: 0 1rem;
 	background: rgb(197, 216, 224);
 }
 
-/* .global-nav a{
-	color: white;
-} */
-
-
-.local-nav {
+.global-nav {
 	position: absolute;
-	top: calc(var(--global-nav-height) + 1px);
+	top: calc(var(--top-nav-height) + 1px);
 	left: 0;
 	z-index: 11;
 	width: 100%;
-	height: var(--local-nav-height);
+	height: var(--global-nav-height);
 	padding: 0 1rem;
 	border-bottom: 1px solid #ddd;
 
@@ -109,32 +108,39 @@ body.before-load {
 	-o-backdrop-filter: saturate(180%) blur(15px);
 	backdrop-filter: saturate(180%) blur(15px);
 }
-.local-nav-sticky .local-nav {
+.global-nav-sticky .global-nav {
 	position: fixed;
 	top: 0;
 	
 }
-.global-nav-links,
-.local-nav-links {
+.top-nav-items,
+.global-nav-links {
 	display: flex;
 	align-items: center;
 	max-width: 1000px;
 	height: 100%;
 	margin: 0 auto;
 }
-.global-nav-links {
+.top-nav-items {
 	/* justify-content: space-between; */
 	justify-content: center;
 }
-.local-nav-links .home {
+.chapel-link {
+	font-size: 13px;
+	text-decoration: underline;
+	margin-left: 10px;
+	color: #383838;
+	cursor: pointer;
+}
+.global-nav-links .home {
 	margin-right: auto;
 	font-size: 1.4rem;
 	font-weight: bold;
 }
-.local-nav-links a {
+.global-nav-links a {
 	font-size: 0.8rem;
 }
-.local-nav-links a:not(.home) {
+.global-nav-links a:not(.home) {
 	margin-left: 2em;
 }
 .scroll-section {
@@ -169,7 +175,7 @@ body.before-load {
 .section-0-canvas {
 	/* position: absolute; */
 	top: 0;
-	/* top: calc(var(--global-nav-height) + var(--local-nav-height)); */
+	/* top: calc(var(--top-nav-height) + var(--global-nav-height)); */
 	height: 100%;
 }
 
@@ -373,7 +379,7 @@ footer .copyright a{
 
 
 @media (min-width: 750px) {
-	.local-nav-links a {
+	.global-nav-links a {
 		font-size: 1rem;
 	}
 

@@ -102,6 +102,20 @@ h4 {
   position: relative;
   height: 0;
   padding-bottom: 56%;
+
+  /* Skeleton */
+  background-image: linear-gradient(90deg, #e2e2e2 0px, #efefef 120px, #e2e2e2 240px);
+  background-size: calc(320px + 320px);
+  animation: refresh 1.2s infinite ease-out;
+}
+/* Skeleton Animation */
+@keyframes refresh {
+  0% {
+    background-position: calc(-320px);
+  }
+  60%, 100% {
+    background-position: 320px;
+  }
 }
 
 iframe {

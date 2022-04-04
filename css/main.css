@@ -36,8 +36,12 @@ body.before-load {
 	opacity: 0;
 	transition: 0.5s;
 }
+.before-load .top-nav,
 .before-load .container {
     display: none;
+}
+.before-load .global-nav {
+    top: 0;
 }
 .before-load .loading {
 	opacity: 1;
